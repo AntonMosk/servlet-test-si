@@ -22,7 +22,7 @@ public class MainServlet extends HttpServlet {
     @Override
     public void init() {
         controllerMap.put(new Request("GET","/"), Factory.getHomeController());
-        controllerMap.put(new Request("GET","/"), Factory.getHomeController());
+        controllerMap.put(new Request("GET","/login"), Factory.getLoginController());
 
     }
 
