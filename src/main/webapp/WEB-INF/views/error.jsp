@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home Page</title>
+    <title>Error Page</title>
 
 
   </head>
 
   <body>
-
+        <p>ERROR</p>
 
   </body>
-</html
+</html>

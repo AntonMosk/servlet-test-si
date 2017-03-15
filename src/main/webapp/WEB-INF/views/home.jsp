@@ -12,7 +12,7 @@
     <link href="<c:url value="../bootstrap/css/bootstrap.min.css"/>" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<c:url value="../bootstrap/css/bootstrap.css"/>" rel="stylesheet">
+    <link href="<c:url value="../bootstrap/css/cover.css"/>" rel="stylesheet">
 
   </head>
 
