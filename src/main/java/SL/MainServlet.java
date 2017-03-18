@@ -10,6 +10,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static SL.Factory.getConnection;
+import static SL.Factory.getUserDaoImpl;
+import static SL.Factory.getUserServiceImpl;
+
 /**
  * Created by anton on 3/11/17.
  */
@@ -23,6 +27,10 @@ public class MainServlet extends HttpServlet {
     public void init() {
         controllerMap.put(new Request("GET","/"), Factory.getHomeController());
         controllerMap.put(new Request("GET","/login"), Factory.getLoginController());
+        controllerMap.put(new Request("POST","/register"), Factory.getRegistrationController(
+                                                                              getUserServiceImpl(
+                                                                              getUserDaoImpl(
+                                                                              getConnection()))));
 
     }
 

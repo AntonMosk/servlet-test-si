@@ -22,7 +22,7 @@ public class ViewModel {
         this.view = view;
     }
 
-    public void setAttributes(List<String> attributes) {
-        this.attributes = attributes;
+    public void setAttributes(String attributes) {
+        this.attributes.add(attributes);
     }
 }
